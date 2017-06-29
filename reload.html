@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reloader</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+</head>
+<body>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<script src='https://cdn.rawgit.com/blanter/design/7a672c5d/autoloadpost.js' type='text/javascript'/>
+<script type='text/javascript'>
+jQuery.ias({
+    container : '.blog-posts',
+    item: '.post-outer',
+    pagination: '#blog-pager',
+    next: '#blog-pager-older-link a',
+    loader: 'https://4.bp.blogspot.com/-kpYZSwETm70/WH3S5iFyYdI/AAAAAAAAFRE/wsLi021UrfQhyAEGMnxVDZfyE_zWIfXuwCLcB/s1600/idblanterloader.gif'
+});
+  </script>
+</b:if>
+</body>
+</html>
